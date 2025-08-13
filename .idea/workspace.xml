@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="ALL" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="0a33202f-f668-47f2-a5cb-7630955d302b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../Code-Review 2/errors.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Code-Review 2/internal/handler/vehicle_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Code-Review 2/internal/repository/vehicle_map_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Code-Review 2/internal/service/vehicle_default_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Code-Review 2/mocks/vehicle/vehicle_map_mock.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/first_example/challenge/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/first_example/challenge/main_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/first_example/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/first_example/main_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../GoWeb/file/file.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../GoWeb/product/product.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../GoWeb/products.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../GoWeb/products.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../GoCourseWeb/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../GoCourseWeb/.idea/vcs.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Go File" />
+      </list>
+    </option>
+  </component>
+  <component name="GOROOT" url="file:///opt/homebrew/opt/go/libexec" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
+  <component name="ProjectId" id="31Cz3EhPp1rfSfO7z6Wf3VHx159" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultGoTemplateProperty": "Go File",
+    "Go Build.go build challenge.executor": "Run",
+    "Go Build.go build first_example.executor": "Run",
+    "Go Test.Test_Main in challenge.executor": "Run",
+    "Go Test.Test_PrintMessage in challenge.executor": "Run",
+    "Go Test.Test_PrintSomething in first_example.executor": "Run",
+    "Go Test.Test_UpdateMessage in challenge.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.GoLinterPluginOnboarding": "true",
+    "RunOnceActivity.GoLinterPluginStorageMigration": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.go.formatter.settings.were.checked": "true",
+    "RunOnceActivity.go.migrated.go.modules.settings": "true",
+    "RunOnceActivity.go.modules.go.list.on.any.changes.was.set": "true",
+    "git-widget-placeholder": "main",
+    "go.import.settings.migrated": "true",
+    "go.sdk.automatically.set": "true",
+    "last_opened_file_path": "/Users/estfernandez",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/first_example" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Go Test.Test_Main in challenge">
+    <configuration name="go build challenge" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="concurrency" />
+      <working_directory value="$PROJECT_DIR$/first_example/challenge" />
+      <kind value="PACKAGE" />
+      <package value="challenge" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/first_example/challenge/main.go" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Test_Main in challenge" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="concurrency" />
+      <working_directory value="$PROJECT_DIR$/first_example/challenge" />
+      <kind value="PACKAGE" />
+      <package value="challenge" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <pattern value="^\QTest_Main\E$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Test_PrintMessage in challenge" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="concurrency" />
+      <working_directory value="$PROJECT_DIR$/first_example/challenge" />
+      <kind value="PACKAGE" />
+      <package value="challenge" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <pattern value="^\QTest_PrintMessage\E$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Test_PrintSomething in first_example" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="concurrency" />
+      <working_directory value="$PROJECT_DIR$/first_example" />
+      <kind value="PACKAGE" />
+      <package value="first_example" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <pattern value="^\QTest_PrintSomething\E$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Test_UpdateMessage in challenge" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="concurrency" />
+      <working_directory value="$PROJECT_DIR$/first_example/challenge" />
+      <kind value="PACKAGE" />
+      <package value="challenge" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <pattern value="^\QTest_UpdateMessage\E$" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Go Test.Test_Main in challenge" />
+        <item itemvalue="Go Test.Test_PrintMessage in challenge" />
+        <item itemvalue="Go Test.Test_UpdateMessage in challenge" />
+        <item itemvalue="Go Test.Test_PrintSomething in first_example" />
+        <item itemvalue="Go Build.go build challenge" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-gosdk-3b128438d3f6-4b567d62c776-org.jetbrains.plugins.go.sharedIndexes.bundled-GO-251.25410.140" />
+        <option value="bundled-js-predefined-d6986cc7102b-6a121458b545-JavaScript-GO-251.25410.140" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0a33202f-f668-47f2-a5cb-7630955d302b" name="Changes" comment="" />
+      <created>1755042642410</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1755042642410</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VgoProject">
+    <settings-migrated>true</settings-migrated>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/first_example/challenge/main.go</url>
+          <line>17</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/first_example/challenge/main_test.go</url>
+          <line>22</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
