@@ -70,10 +70,9 @@ func produceOrders(producerOrders *Producer) {
 
 	//run forever or until we receive a quit notification
 	for {
+		//try to make a pizza
 		currentPizzaOrder := makePizzaOrder(orderNumber)
 		orderNumber = currentPizzaOrder.orderNumber
-
-		//try to make a pizza
 		select {
 		case producerOrders.data <- *currentPizzaOrder:
 
@@ -129,7 +128,6 @@ func main() {
 	//create and run consumer
 	consumeOrders(producer)
 
-	//
 	color.Cyan("-------------------------------- \n")
 	color.Cyan("Summary :")
 	color.Cyan("-------------------------------- \n")
