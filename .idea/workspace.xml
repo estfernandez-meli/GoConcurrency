@@ -10,14 +10,24 @@
       <change afterPath="$PROJECT_DIR$/../../Code-Review 2/internal/repository/vehicle_map_test.go" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../Code-Review 2/internal/service/vehicle_default_test.go" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../../Code-Review 2/mocks/vehicle/vehicle_map_mock.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/first_example/challenge/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/first_example/challenge/main_test.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/first_example/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/first_example/main_test.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../GoWeb/file/file.go" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../GoWeb/product/product.go" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../GoWeb/products.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../GoWeb/products.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../GoCourseWeb/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../GoCourseWeb/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../docker-compose.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../go.mod" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../go.sum" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../internal/middleware/midleware.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../internal/user/endpoint.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../internal/user/repository.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../internal/user/service.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../internal/user/user.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../main.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../utils/error.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../utils/response.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../utils/validation.go" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,7 +43,7 @@
   </component>
   <component name="GOROOT" url="file:///opt/homebrew/opt/go/libexec" />
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 5
@@ -49,9 +59,12 @@
     "Go Build.go build challenge.executor": "Run",
     "Go Build.go build first_example.executor": "Run",
     "Go Test.Test_Main in challenge.executor": "Run",
+    "Go Test.Test_Main in dining_philosophers.executor": "Run",
+    "Go Test.Test_Main_With_Delay in dining_philosophers.executor": "Run",
     "Go Test.Test_PrintMessage in challenge.executor": "Run",
     "Go Test.Test_PrintSomething in first_example.executor": "Run",
     "Go Test.Test_UpdateMessage in challenge.executor": "Run",
+    "Go Test.Test_UpdateMsg in example2.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.GoLinterPluginOnboarding": "true",
     "RunOnceActivity.GoLinterPluginStorageMigration": "true",
@@ -63,7 +76,7 @@
     "git-widget-placeholder": "main",
     "go.import.settings.migrated": "true",
     "go.sdk.automatically.set": "true",
-    "last_opened_file_path": "/Users/estfernandez",
+    "last_opened_file_path": "/Users/estfernandez/Desktop/Udemy/concurrency",
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "nodejs_package_manager_path": "npm"
@@ -74,16 +87,7 @@
       <recent name="$PROJECT_DIR$/first_example" />
     </key>
   </component>
-  <component name="RunManager" selected="Go Test.Test_Main in challenge">
-    <configuration name="go build challenge" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="concurrency" />
-      <working_directory value="$PROJECT_DIR$/first_example/challenge" />
-      <kind value="PACKAGE" />
-      <package value="challenge" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/first_example/challenge/main.go" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Go Test.Test_Main_With_Delay in dining_philosophers">
     <configuration name="Test_Main in challenge" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="concurrency" />
       <working_directory value="$PROJECT_DIR$/first_example/challenge" />
@@ -93,6 +97,28 @@
       <filePath value="$PROJECT_DIR$" />
       <framework value="gotest" />
       <pattern value="^\QTest_Main\E$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Test_Main in dining_philosophers" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="concurrency" />
+      <working_directory value="$PROJECT_DIR$/dinning_philosophers" />
+      <kind value="PACKAGE" />
+      <package value="dining_philosophers" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <pattern value="^\QTest_Main\E$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Test_Main_With_Delay in dining_philosophers" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="concurrency" />
+      <working_directory value="$PROJECT_DIR$/dinning_philosophers" />
+      <kind value="PACKAGE" />
+      <package value="dining_philosophers" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <pattern value="^\QTest_Main_With_Delay\E$" />
       <method v="2" />
     </configuration>
     <configuration name="Test_PrintMessage in challenge" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
@@ -106,35 +132,24 @@
       <pattern value="^\QTest_PrintMessage\E$" />
       <method v="2" />
     </configuration>
-    <configuration name="Test_PrintSomething in first_example" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="Test_UpdateMsg in example2" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="concurrency" />
-      <working_directory value="$PROJECT_DIR$/first_example" />
+      <working_directory value="$PROJECT_DIR$/example2" />
       <kind value="PACKAGE" />
-      <package value="first_example" />
+      <package value="example2" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
       <framework value="gotest" />
-      <pattern value="^\QTest_PrintSomething\E$" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Test_UpdateMessage in challenge" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
-      <module name="concurrency" />
-      <working_directory value="$PROJECT_DIR$/first_example/challenge" />
-      <kind value="PACKAGE" />
-      <package value="challenge" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$" />
-      <framework value="gotest" />
-      <pattern value="^\QTest_UpdateMessage\E$" />
+      <pattern value="^\QTest_UpdateMsg\E$" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Test.Test_Main_With_Delay in dining_philosophers" />
+        <item itemvalue="Go Test.Test_Main in dining_philosophers" />
+        <item itemvalue="Go Test.Test_UpdateMsg in example2" />
         <item itemvalue="Go Test.Test_Main in challenge" />
         <item itemvalue="Go Test.Test_PrintMessage in challenge" />
-        <item itemvalue="Go Test.Test_UpdateMessage in challenge" />
-        <item itemvalue="Go Test.Test_PrintSomething in first_example" />
-        <item itemvalue="Go Build.go build challenge" />
       </list>
     </recent_temporary>
   </component>
@@ -166,12 +181,12 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/first_example/challenge/main.go</url>
+          <url>file://$PROJECT_DIR$/example1_wait_group/challenge/main.go</url>
           <line>17</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/first_example/challenge/main_test.go</url>
+          <url>file://$PROJECT_DIR$/example1_wait_group/challenge/main_test.go</url>
           <line>22</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
