@@ -7,7 +7,7 @@ import (
 	"github.com/go-chi/chi/v5/middleware"
 )
 
-func (app *Config) routes() http.Handler{
+func (app *Config) routes() http.Handler {
 	//create router
 	mux := chi.NewRouter()
 
@@ -16,6 +16,11 @@ func (app *Config) routes() http.Handler{
 	mux.Use(app.SessionLoad)
 	// define application routes
 	mux.Get("/", app.HomePage)
+	mux.Get("/login", app.LoginPage)
+	mux.Post("/login", app.PostLoginPage)
+	mux.Get("/register", app.RegisterPage)
+	mux.Post("/register", app.PostRegisterPage)
+	mux.Get("/activate-account", app.ActivateAccount)
 	return mux
 
 }
