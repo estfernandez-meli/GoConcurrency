@@ -6,7 +6,9 @@ import (
 	"log"
 	"net/http"
 	"os"
+	"os/signal"
 	"sync"
+	"syscall"
 	"time"
 
 	"github.com/alexedwards/scs/redisstore"
@@ -37,22 +39,24 @@ func main() {
 
 	// set up the application config
 	app := Config{
-		Session: session,
-		DB:      db,
-		InfoLog: infoLog,
-		Errorlog: errorLog,
+		Session:   session,
+		DB:        db,
+		InfoLog:   infoLog,
+		Errorlog:  errorLog,
 		WaitGroup: &wg,
 	}
 	// set up mail
 
+	//listen for signals
+	go app.listenForShutdown()
 	//listen for web connections
 	app.serve()
 }
 
-func (app *Config) serve(){
+func (app *Config) serve() {
 	//start http server
 	srv := &http.Server{
-		Addr: fmt.Sprintf(":%s", webPort),
+		Addr:    fmt.Sprintf(":%s", webPort),
 		Handler: app.routes(),
 	}
 	app.InfoLog.Println("Starting web server...")
@@ -123,4 +127,22 @@ func initRedis() *redis.Pool {
 		},
 	}
 	return redisPool
+}
+
+func (app *Config) listenForShutdown() {
+	quit := make(chan os.Signal, 1)
+	signal.Notify(quit, syscall.SIGINT, syscall.SIGTERM)
+	<-quit // Espera a que llegue una señal, bloquea el código hasta que eso suceda
+	app.shutdown()
+	os.Exit(0)
+}
+
+func (app *Config) shutdown() {
+	//perform any cleanup task
+	app.InfoLog.Println("would run cleanup tasks...")
+
+	//block until waitgroup is empty
+	app.WaitGroup.Wait() // Bloquea hasta que el contador llega a 0
+
+	app.InfoLog.Println("closing channels and shutting down application")
 }
