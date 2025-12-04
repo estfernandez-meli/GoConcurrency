@@ -11,6 +11,48 @@ func (app *Config) LoginPage(w http.ResponseWriter, r *http.Request) {
 }
 
 func (app *Config) PostLoginPage(w http.ResponseWriter, r *http.Request) {
+	_ = app.Session.RenewToken(r.Context())
+
+	//parse form post
+	err := r.ParseForm()
+	if err != nil {
+		app.Errorlog.Println(err)
+		return
+	}
+
+	// get email and password
+
+	email := r.Form.Get("email")
+	password := r.Form.Get("password")
+
+	user, err := app.Models.User.GetByEmail(email)
+
+	if err != nil {
+		app.Session.Put(r.Context(), "error", "Invalid credentials")
+		http.Redirect(w, r, "/login", http.StatusSeeOther)
+		return
+	}
+
+	//check password
+	validPassword, err := app.Models.User.PasswordMatches(password)
+
+	if err != nil {
+		app.Session.Put(r.Context(), "error", "Invalid credentials")
+		http.Redirect(w, r, "/login", http.StatusSeeOther)
+		return
+	}
+
+	if !validPassword {
+		app.Session.Put(r.Context(), "error", "Invalid credentials")
+		http.Redirect(w, r, "/login", http.StatusSeeOther)
+		return
+	}
+
+	app.Session.Put(r.Context(), "user", user)
+	app.Session.Put(r.Context(), "flash", "successful login!")
+
+	http.Redirect(w,r,"/", http.StatusSeeOther)
+
 }
 
 func (app *Config) RegisterPage(w http.ResponseWriter, r *http.Request) {
