@@ -2,6 +2,7 @@ package main
 
 import (
 	"database/sql"
+	"final-project/data"
 	"fmt"
 	"log"
 	"net/http"
@@ -44,6 +45,7 @@ func main() {
 		InfoLog:   infoLog,
 		Errorlog:  errorLog,
 		WaitGroup: &wg,
+		Models:    data.New(db),
 	}
 	// set up mail
 
